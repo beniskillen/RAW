@@ -87,7 +87,7 @@ export default function App() {
               <p>Your brand deserves to be more than just in the room; it deserves to <strong>own the conversation.</strong></p>
               <p><strong>The Raw</strong> is not your average talent agency &mdash; we're the industry's backstage pass for brands that want to make noise.</p>
               <p>We connect the dots between top-tier talent and ambitious clients to unlock sponsorships and endorsements that make an impact.</p>
-              <a className="btn ghost magnetic" href="#services" style= marginTop: 14 >Discover How We Work</a>
+              <a className="btn ghost magnetic" href="#services" style={{ marginTop: 14 }}>Discover How We Work</a>
             </div>
           </div>
         </section>
@@ -98,9 +98,9 @@ export default function App() {
             <div className="svc-head">
               <div className="reveal">
                 <span className="kicker eyebrow">Sponsorships, Partnerships &amp; Endorsements</span>
-                <h2 className="dh" style= marginTop: 14 >Connecting<br />Talent &amp; Brands</h2>
+                <h2 className="dh" style={{ marginTop: 14 }}>Connecting<br />Talent &amp; Brands</h2>
               </div>
-              <p className="lead reveal" style= maxWidth: '34ch' >From strategy to execution &mdash; end-to-end solutions that make an impact.</p>
+              <p className="lead reveal" style={{ maxWidth: '34ch' }}>From strategy to execution &mdash; end-to-end solutions that make an impact.</p>
             </div>
             <div className="svc-list">
               <article className="svc reveal" data-svc>
@@ -124,14 +124,14 @@ export default function App() {
                 <span className="plus">+</span>
               </article>
             </div>
-            <div style= marginTop: 40  className="reveal"><a className="btn primary magnetic" href="#contact">Let's Talk Strategy</a></div>
+            <div style={{ marginTop: 40 }} className="reveal"><a className="btn primary magnetic" href="#contact">Let's Talk Strategy</a></div>
           </div>
         </section>
 
         {/* ====================== STATS ====================== */}
         <section className="block stats" id="results">
           <div className="wrap">
-            <span className="kicker eyebrow reveal" style= justifyContent: 'center' >Proven Success With The Raw</span>
+            <span className="kicker eyebrow reveal" style={{ justifyContent: 'center' }}>Proven Success With The Raw</span>
             <div className="stat-grid">
               <div className="stat reveal"><div className="n"><span data-count="25">0</span>+</div><div className="lbl">Major Festival Activations</div></div>
               <div className="stat reveal"><div className="n"><span data-count="100">0</span>+</div><div className="lbl">Brands Worked With</div></div>
@@ -144,7 +144,7 @@ export default function App() {
         <section className="block case">
           <div className="wrap">
             <span className="kicker eyebrow reveal">Cover Story</span>
-            <h2 className="dh reveal" style= marginTop: 14 >From In The Room<br />To Owning It</h2>
+            <h2 className="dh reveal" style={{ marginTop: 14 }}>From In The Room<br />To Owning It</h2>
             <div className="case-row reveal">
               <div className="case-cell"><span className="tag">Client Challenge</span><p>Brand X needed to break into the cultural conversation.</p></div>
               <div className="case-cell"><span className="tag">Solution</span><p>We connected them with Celebrity Y, creating a viral campaign that reached Z million impressions.</p></div>
@@ -158,7 +158,7 @@ export default function App() {
           <div className="wrap">
             <div className="head">
               <span className="kicker eyebrow reveal">Built For The Culture</span>
-              <h2 className="dh reveal" style= marginTop: 14 >Worn Worldwide</h2>
+              <h2 className="dh reveal" style={{ marginTop: 14 }}>Worn Worldwide</h2>
               <p className="reveal">A fusion of anti-hero energy and global culture. Scroll the index &mdash; every chapter of The Raw, in focus.</p>
             </div>
           </div>
@@ -184,7 +184,7 @@ export default function App() {
         <section className="roster" id="roster">
           <div className="wrap">
             <span className="kicker eyebrow reveal">Experience With A-List Talent</span>
-            <h2 className="dh reveal" style= marginTop: 14 >The Names<br />We Move With</h2>
+            <h2 className="dh reveal" style={{ marginTop: 14 }}>The Names<br />We Move With</h2>
           </div>
           <div className="rows">
             <div className="marquee alt" data-marquee data-speed="0.5"><div className="track">
@@ -203,7 +203,7 @@ export default function App() {
           <div className="wrap grid2">
             <div className="reveal">
               <span className="kicker eyebrow">Global Reach</span>
-              <h2 className="dh" style= marginTop: 14 >On The Ground.<br />Everywhere Online.</h2>
+              <h2 className="dh" style={{ marginTop: 14 }}>On The Ground.<br />Everywhere Online.</h2>
             </div>
             <div className="reveal">
               <p className="lead">Physical activations executed across diverse markets, paired with unmatched digital reach &mdash; over a billion streams across all social platforms and partner networks.</p>
@@ -220,7 +220,7 @@ export default function App() {
         {/* ====================== FORMULA ====================== */}
         <section className="block formula">
           <div className="wrap">
-            <span className="kicker eyebrow reveal" style= justifyContent: 'center' >Our Formula For Success</span>
+            <span className="kicker eyebrow reveal" style={{ justifyContent: 'center' }}>Our Formula For Success</span>
             <div className="eq">
               <span className="term reveal">Cultural<br />Strategy</span>
               <span className="op reveal">+</span>
@@ -239,8 +239,8 @@ export default function App() {
             <div className="reveal">
               <span className="kicker eyebrow">Let's Talk</span>
               <h2>Ready To<br />Disrupt?</h2>
-              <p className="lead" style= marginTop: 20 >Send us a message, and let's make it happen.</p>
-              <p style= marginTop: 18 ><a className="btn ghost magnetic" href="mailto:benny@therawculture.io">benny@therawculture.io</a></p>
+              <p className="lead" style={{ marginTop: 20 }}>Send us a message, and let's make it happen.</p>
+              <p style={{ marginTop: 18 }}><a className="btn ghost magnetic" href="mailto:benny@therawculture.io">benny@therawculture.io</a></p>
             </div>
             <form className="form reveal" onSubmit={onSubmit}>
               <div className="field"><label>Name</label><input type="text" placeholder="Your name" required /></div>
@@ -252,7 +252,7 @@ export default function App() {
                 <select defaultValue=""><option>Not sure on a budget</option><option>$1k–$5k</option><option>$5k–$20k</option><option>$20k–$100k</option><option>$100k+</option></select>
               </div>
               <div className="field"><label>Message</label><textarea rows={3} placeholder="Tell us what you're building" /></div>
-              <button className="btn primary" type="submit" style= justifySelf: 'start', marginTop: 8 >Submit</button>
+              <button className="btn primary" type="submit" style={{ justifySelf: 'start', marginTop: 8 }}>Submit</button>
             </form>
           </div>
         </section>
@@ -261,7 +261,7 @@ export default function App() {
       {/* ====================== FOOTER ====================== */}
       <footer>
         <div className="wrap foot">
-          <div className="brand"><span className="mark" style= width: 64 ><img src="/lockup.svg" alt="The Raw" /></span></div>
+          <div className="brand"><span className="mark" style={{ width: 64 }}><img src="/lockup.svg" alt="The Raw" /></span></div>
           <div className="socials">
             <a href="https://www.instagram.com/therawcultr" aria-label="Instagram">IG</a>
             <a href="https://linkedin.com" aria-label="LinkedIn">in</a>

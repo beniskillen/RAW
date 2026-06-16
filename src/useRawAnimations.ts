@@ -205,12 +205,20 @@ export function useRawAnimations() {
       } else {
         float.classList.add('show', 'pinned')
         const onScroll = () => {
-          const mid = innerHeight / 2; let best: HTMLElement | null = null, bd = 1e9
-          rows.forEach((r) => { const b = r.getBoundingClientRect(); const c = b.top + b.height / 2; const d = Math.abs(c - mid); if (d < bd) { bd = d; best = r } })
+          const mid = innerHeight / 2
+          const bestRow = rows.reduce<HTMLElement | null>((best, r) => {
+            const b = r.getBoundingClientRect()
+            const c = b.top + b.height / 2
+            const d = Math.abs(c - mid)
+            if (!best) return r
+            const bd = best.getBoundingClientRect()
+            const bc = bd.top + bd.height / 2
+            return d < Math.abs(bc - mid) ? r : best
+          }, null)
           const inView = sec.getBoundingClientRect()
           const within = inView.top < innerHeight * 0.85 && inView.bottom > innerHeight * 0.15
           float!.classList.toggle('show', within)
-          if (best) setActive(best.getAttribute('data-img'), best)
+          if (bestRow) setActive(bestRow.getAttribute('data-img'), bestRow)
         }
         window.addEventListener('scroll', onScroll, { passive: true })
         window.addEventListener('resize', onScroll)
